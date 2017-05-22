@@ -18,7 +18,7 @@ npm install --save-dev browserify watchify uglify-js
 
 ```
 "scripts": {
-  "build-debug": "browserify index.js -d --s name > dist/pizza.js",
+  "build-debug": "browserify index.js -d --s name > dist/name.js",
   "build-min": "browserify index.js --s name | uglifyjs -c > dist/name.min.js",
   "build": "npm run build-debug && npm run build-min",
   "watch": "watchify index.js -d --s name -o dist/name.js -v"
